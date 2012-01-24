@@ -22,9 +22,9 @@ much inspired by Turbo Fredriksson's PHP-IDN.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor < /dev/null
+%{__perl} Makefile.PL INSTALLDIRS=vendor LIBS="-lidn"
 
-%make
+make OPTIMIZE="%{optflags}"
 
 # Change man page encoding into UTF-8
 iconv -f latin1 -t utf-8 -o "blib/man3/Net::LibIDN.3pm.utf8" "blib/man3/Net::LibIDN.3pm"
