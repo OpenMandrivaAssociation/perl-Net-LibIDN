@@ -10,6 +10,7 @@ Group: 		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TH/THOR/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	idn-devel >= 0.4.0
+BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
 
 %description
