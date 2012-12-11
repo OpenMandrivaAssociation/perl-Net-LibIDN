@@ -43,3 +43,13 @@ mv -f "blib/man3/Net::LibIDN.3pm.utf8" "blib/man3/Net::LibIDN.3pm"
 %{perl_vendorarch}/Net
 %{perl_vendorarch}/auto/Net
 %{_mandir}/man3/*.3pm*
+
+
+%changelog
+* Tue Jan 24 2012 Oden Eriksson <oeriksson@mandriva.com> 0.120.0-1
++ Revision: 767822
+- fix deps
+- fix build
+- import perl-Net-LibIDN
+
+
