@@ -9,6 +9,7 @@ License: 	GPL+ or Artistic
 Group: 		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TH/THOR/%{upstream_name}-%{upstream_version}.tar.gz
+BuildRequires:	make
 BuildRequires:	idn-devel >= 0.4.0
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
